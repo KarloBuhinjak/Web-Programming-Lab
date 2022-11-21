@@ -1,0 +1,42 @@
+.title {
+  border: 5px solid red;
+}
+nav {
+  border: 5px solid red;
+}
+
+.article1 {
+  display: inline-flex;
+  border: 5px solid red;
+}
+.article2 {
+  border: 5px solid red;
+}
+
+.text1,
+.text2 {
+  border: 5px solid black;
+}
+
+aside {
+  border: 5px solid black;
+  margin-left: 20px;
+}
+
+.logo {
+  text-align: center;
+}
+
+img {
+  margin-bottom: -30px;
+}
+
+footer {
+  border: 5px solid red;
+}
+
+table,
+th,
+td {
+  border: 1px solid black;
+}

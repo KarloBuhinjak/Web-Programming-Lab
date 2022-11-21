@@ -1,0 +1,17 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#provjeraImena,
+#provjeraTextArea,
+#provjeraMaila {
+  display: inline;
+  color: red;
+}
+
+#kvadriranBroj {
+  display: inline;
+  color: black;
+}

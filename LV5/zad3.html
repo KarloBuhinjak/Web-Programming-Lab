@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Naslov</h1>
+    <ul>
+      <h2>Omiljne pjesme</h2>
+      <li>Prljavo kazalište - Heroj ulice</li>
+      <li>Azra - Kad fazani lete</li>
+      <li>Led Zeppelin - Stairway to Heaven</li>
+    </ul>
+    <ul>
+      <h2>Omiljni filmovi</h2>
+      <li>Harry Potter</li>
+      <li>The Godfather</li>
+      <li>Schindler's List</li>
+    </ul>
+    <img
+      src="https://i.scdn.co/image/ab67616d0000b273a40a86cb9905ea4ff004469c"
+      alt=""
+      width="150px"
+      onclick="imageDisappear(this)"
+      onmouseover="imageBorder(this)"
+    />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/5/57/Cover_of_Kad_fazani_lete%2C_by_Azra.jpg"
+      alt=""
+      width="150px"
+      onclick="imageDisappear(this)"
+      onmouseover="imageBorder(this)"
+    />
+    <img
+      src="https://upload.wikimedia.org/wikipedia/en/e/ef/Led_Zeppelin_-_Led_Zeppelin_%281969%29_front_cover.png"
+      alt=""
+      width="150px"
+      onclick="imageDisappear(this)"
+      onmouseover="imageBorder(this)"
+    />
+    <br /><br />
+    <input type="button" value="ZELENA" onclick="zelena()" /><br /><br />
+    <input type="button" value="Abrakadabra" onclick="fadeAway()" />
+
+    <script src="script.js"></script>
+  </body>
+</html>

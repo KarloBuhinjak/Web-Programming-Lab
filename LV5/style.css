@@ -1,0 +1,73 @@
+.zelena {
+  color: green;
+}
+
+img {
+  border: 3px solid white;
+}
+
+img:hover {
+  border: 3px solid black;
+}
+
+#fadeFast {
+  animation: fadeOut 1s;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+}
+
+#fadeMedium {
+  animation: fadeOut 3s;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+}
+
+#fadeSlow {
+  animation: fadeOut 5s;
+  opacity: 0;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+}
+
+#slika1,
+#slika2,
+#slika3 {
+  opacity: 1;
+}
+
+.container {
+  display: flex;
+}
+.crvenoContainer,
+.crnoContainer {
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.crveno {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+}
+
+.crno {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+}

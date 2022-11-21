@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="container">
+    <div>
+      <h1>Validacija</h1>
+      <form action="/" method="GET">
+        <input
+          type="button"
+          value="Pozdrav"
+          id="pozdravBtn"
+          ondblclick="pozdrav()"
+        /><br />
+        <label for="name">Ime i prezime:</label>
+        <input type="text" id="imePrezime" />
+        <p id="provjeraImena"></p>
+        <br /><br />
+        <label for="ispis">Polje za ispis:</label>
+        <textarea
+          rows="10"
+          cols="50"
+          name="comment"
+          form="usrform"
+          id="buhinjak"
+        >
+        Mjesto za ispis kolegija</textarea
+        >
+        <p id="provjeraTextArea"></p>
+        <br /><br />
+        <label for="number">Unesite broj:</label>
+        <input type="text" id="broj" /><i
+          class="fa-solid fa-question"
+          title="Broj mora biti između 1 i 10"
+        ></i>
+        <input
+          type="button"
+          value="Kvadriraj"
+          id="kvadriranjeBtn"
+          onclick="kvadriranje()"
+        />
+        <br />
+
+        <input type="button" value="Kolegij" onmouseover="Kolegij()" />
+        <input
+          type="button"
+          value="Obriši"
+          id="obrišiBtn"
+          onclick="obriši()"
+        /><br />
+        <p id="kvadriranBroj">Ovdje će se ispisati rezultat</p>
+        <br /><br />
+        <label for="email">Vaša e-mail adresa:</label>
+        <input type="text" id="email" />
+        <p id="provjeraMaila"></p>
+        <br /><br /><br />
+        <input type="button" value="Provjeri" onclick="provjeriForm()" />
+      </form>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/3d0b6b75b7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      function pozdrav() {
+        for (let i = 5; i > 0; i--) {
+          alert("Broj upozorenja " + i);
+        }
+      }
+    </script>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+<html>
+  <head>
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <h1>Jednostavna tvorba objekta</h1>
+    <script>
+      function pas(ime, pasmina, starost) {
+        this.ime = ime;
+        this.pasmina = pasmina;
+        this.starost = starost;
+      }
+      var bijeli = new pas("jura", "dalmatiner", "8");
+      var garavi = new pas("garo", "mješanac", "nepoznato");
+      var žuti = new pas("floki", "pudkica", "4");
+      var smeđi = new pas("čarli", "ovčar", "3");
+
+      document.write(
+        "Ime prvog psa je: " +
+          bijeli.ime +
+          ", pasmina: " +
+          bijeli.pasmina +
+          " i starost: " +
+          bijeli.starost +
+          "<br>"
+      );
+      document.write(
+        "Ime drugog psa je: " +
+          garavi.ime +
+          ", pasmina: " +
+          garavi.pasmina +
+          " i starost: " +
+          garavi.starost +
+          "<br>"
+      );
+      document.write(
+        "Ime treceg psa je: " +
+          žuti.ime +
+          ", pasmina: " +
+          žuti.pasmina +
+          " i starost: " +
+          žuti.starost +
+          "<br>"
+      );
+      document.write(
+        "Ime četvrti psa je: " +
+          smeđi.ime +
+          ", pasmina: " +
+          smeđi.pasmina +
+          " i starost: " +
+          smeđi.starost +
+          "<br>"
+      );
+
+      function macka(ime, boja, dob, spol) {
+        this.ime = ime;
+        this.boja = boja;
+        this.dob = dob;
+        this.spol = spol;
+      }
+      var tigar = new macka("tigar", "tigrasta", "8", "muški");
+      var micika = new macka("micika", "bijela", "5", "ženski");
+
+      document.write(
+        "Ime mačke je: " +
+          tigar.ime +
+          ", boja: " +
+          tigar.boja +
+          " , starost: " +
+          tigar.dob +
+          "i spol" +
+          tigar.spol +
+          "<br>"
+      );
+      document.write(
+        "Ime mačke je: " +
+          micika.ime +
+          ", boja: " +
+          micika.boja +
+          " , starost: " +
+          micika.dob +
+          "i spol" +
+          micika.spol +
+          "<br>"
+      );
+    </script>
+
+    <p id="p1"></p>
+    <p id="p2"></p>
+    <p id="p3"></p>
+
+    <script src="lv4.js"></script>
+  </body>
+</html>

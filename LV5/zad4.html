@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>jQuery UI Droppable - Default functionality</title>
+    <link
+      href="https://code.jquery.com/ui/1.10.4/themes/ui-lightness/jquery-ui.css"
+      rel="stylesheet"
+    />
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+
+    <style>
+      .wrap {
+        display: table-row-group;
+      }
+      #crvena,
+      #crna {
+        width: 100px;
+        height: 100px;
+        padding: 0.5em;
+        float: left;
+        margin: 0px 5px 10px 0;
+      }
+
+      #crvenaContainer,
+      #crnaContainer {
+        width: 200px;
+        height: 200px;
+        padding: 0.5em;
+        float: left;
+        margin: 10px;
+        border: 2px solid black;
+      }
+
+      #crvena {
+        background: red;
+      }
+      #crna {
+        background: black;
+        color: white;
+      }
+      .redB {
+        border-color: red;
+      }
+    </style>
+
+    <script>
+      $(function () {
+        $("#crvena").draggable();
+        $("#crna").draggable();
+
+        $("#crvenaContainer").droppable({
+          accept: "#crvena",
+          drop: function (event, ui) {
+            $(this)
+              .addClass("ui-state-highlight redB")
+              .find("p")
+              .html("Crvena!");
+          },
+        });
+
+        $("#crnaContainer").droppable({
+          accept: "#crna",
+          drop: function (event, ui) {
+            $(this).addClass("ui-state-highlight").find("p").html("Crna!");
+          },
+        });
+      });
+    </script>
+  </head>
+
+  <body>
+    <div class="wrap">
+      <div id="crvenaContainer">
+        <p>Crvena</p>
+      </div>
+
+      <div id="crnaContainer">
+        <p>Crna</p>
+      </div>
+    </div>
+    <div id="crvena">
+      <p>Crvena</p>
+    </div>
+
+    <div id="crna">
+      <p>Crna</p>
+    </div>
+  </body>
+</html>
